@@ -1,0 +1,105 @@
+{
+  "version": 1,
+  "plugin_id": "app.chilpa.tidal",
+  "plugin_version": "0.1.18",
+  "author": "vicrodh",
+  "classification": "third_party",
+  "validation": {
+    "project": "Chilpa",
+    "status": "passed",
+    "date": "2026-10-16",
+    "scope": [
+      "manifest and requested permissions",
+      "archive integrity and host limits",
+      "process protocol",
+      "isolated host installation and account-free settings"
+    ]
+  },
+  "source": {
+    "repository": "https://github.com/vicrodh/chilpa-pg-tidal",
+    "commit": "86227f33e1f97b3c67ea5991491e77b1c2fa5fcb",
+    "tree": "2a860f4524a750549103bc434f5f613ba21b5720"
+  },
+  "package": {
+    "name": "chilpa-pg-tidal-0.1.18-linux-x86_64.zip",
+    "sha256": "eb42be018780a1401a54fe26199d43130233e0df313d5c687925f0ce418b120b",
+    "platform": "linux-x86_64",
+    "compressed_bytes": 10826439,
+    "expanded_bytes": 22189577,
+    "files": 133
+  },
+  "contract": {
+    "api_version": 1,
+    "process_protocol": 1,
+    "runtime": "process",
+    "host_version": "0.1.0-beta"
+  },
+  "permissions": [
+    {
+      "type": "network",
+      "domains": [
+        "api.tidal.com",
+        "auth.tidal.com",
+        "login.tidal.com",
+        "listen.tidal.com",
+        "tidal.com",
+        "resources.tidal.com",
+        "audio.tidal.com",
+        "sp-pr-fa.audio.tidal.com",
+        "sp-ad-fa.audio.tidal.com",
+        "ab-pr-fa.audio.tidal.com",
+        "ec.tidal.com"
+      ]
+    },
+    {
+      "type": "register_source"
+    },
+    {
+      "type": "register_panel"
+    },
+    {
+      "type": "own_account",
+      "keyring": false
+    }
+  ],
+  "checks": {
+    "fixture_tests": {
+      "passed": 67,
+      "failed": 0
+    },
+    "dependency_versions_preserved": true,
+    "source_tree_matches_release": true,
+    "package_limits": true,
+    "account_files_excluded": true,
+    "packaged_sandbox_protocol": true,
+    "host_installation": {
+      "Linux": {
+        "language": "es",
+        "passed": true
+      },
+      "Ubuntu 24.04 AppImage": {
+        "language": "en",
+        "passed": true,
+        "network": "none"
+      }
+    },
+    "permission_approval_required": true,
+    "browser_sign_in_form_and_cancel": true,
+    "disable": true
+  },
+  "not_tested": [
+    "live account sign-in",
+    "subscription entitlement",
+    "live provider catalog and playback",
+    "physical receiver playback"
+  ],
+  "existing_user_profile_modified": false,
+  "audio_played": false,
+  "build": {
+    "system": "Debian 12",
+    "glibc_baseline": "2.36",
+    "python": "3.13.16",
+    "recipe": "tools/package-linux.Dockerfile",
+    "dependency_versions": "requirements-lock.txt"
+  }
+}
