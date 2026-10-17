@@ -24,11 +24,18 @@ automatically install or enable its plugins. Each download has a SHA-256 checksu
 | Plugin | Author | Source and downloads | Platform | Requirements |
 | --- | --- | --- | --- | --- |
 | Tidal | [vicrodh](https://github.com/vicrodh) | [chilpa-pg-tidal](https://github.com/vicrodh/chilpa-pg-tidal) | Linux x86_64 | Chilpa 0.1.0-beta; a Tidal account with a subscription for full playback. |
+| Spotify | [vicrodh](https://github.com/vicrodh) | [chilpa-pg-spotify](https://github.com/vicrodh/chilpa-pg-spotify) | Linux x86_64 / macOS Apple Silicon | A host with native process support; Premium for playback; personal Client ID recommended. |
 
 I publish Tidal independently of Tidal and retain its GPL-3.0-or-later license.
 It provides library browsing, search, discovery, playlists and playback through
 its own account connection. Account credentials remain in the plugin's private
 data; its README describes storage, permissions and playback limits.
+
+I publish Spotify independently under MIT and credit Carmine Paolino's Spotifast
+in its README and bundled licenses. It is also a working example in the SDK's
+[native process guide](https://github.com/vicrodh/chilpa-plugins-sdk/blob/main/wiki/Native-Plugins.md#native-source-example).
+Its separate Web and playback approvals, quotas, account storage and tested
+platform limits are documented in the plugin repository.
 
 ## Catalog format
 
