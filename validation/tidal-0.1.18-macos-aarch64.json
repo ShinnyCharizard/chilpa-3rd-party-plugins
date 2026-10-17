@@ -1,0 +1,42 @@
+{
+  "plugin": "app.chilpa.tidal",
+  "version": "0.1.18",
+  "platform": "macos-aarch64",
+  "status": "passed",
+  "package": {
+    "url": "https://github.com/vicrodh/chilpa-pg-tidal/releases/download/v0.1.18/chilpa-pg-tidal-0.1.18-macos-aarch64.zip",
+    "sha256": "1afda8413af0f0f144bc5990f0a004bd945c02527a42ace3dc0435313b101e99"
+  },
+  "source": {
+    "runtime_tag": "v0.1.18",
+    "repository": "https://github.com/vicrodh/chilpa-pg-tidal",
+    "packaging_documentation_commit": "524ccaa206cfd5fe1e804a6215bd34354c3264e3"
+  },
+  "host": {
+    "source_commit": "1671540715c0927f28db10d0d09bd833e95c6d28",
+    "platform": "macos-aarch64",
+    "tested_macos": "26.6.2",
+    "sandbox": "Seatbelt deny-default",
+    "deployed_app_startup": true,
+    "exact_package_installed": true,
+    "permission_review": true
+  },
+  "checks": [
+    "macOS catalog package selection",
+    "host ZIP installer",
+    "permission review",
+    "native sandbox initialization",
+    "signed-out authentication form",
+    "sign-in cancellation",
+    "playlist preview",
+    "host broker library matching",
+    "scoped playlist commit",
+    "deduplication",
+    "unmatched review",
+    "database playlist with two entries"
+  ],
+  "physical_audio_used": false,
+  "live_account_used": false,
+  "real_profile_modified": false,
+  "live_account_playback": "not tested"
+}
