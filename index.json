@@ -5,7 +5,7 @@
       "id": "app.chilpa.tidal",
       "name": "Tidal",
       "version": "0.1.18",
-      "description": "Third-party Tidal library, discovery, playlists and playback. Requires a Tidal subscription. Linux x86_64 only.",
+      "description": "Third-party Tidal library, discovery, playlists and playback. Requires a Tidal subscription. Linux x86_64 and macOS Apple Silicon.",
       "author": "vicrodh",
       "category": "Streaming",
       "repository": "https://github.com/vicrodh/chilpa-pg-tidal",
@@ -19,7 +19,23 @@
       "validation": {
         "project": "Chilpa",
         "status": "passed",
-        "report": "https://raw.githubusercontent.com/vicrodh/chilpa-3rd-party-plugins/177bb42dd0e147ee8d0f3659a5888304ee4e7ef2/validation/tidal-0.1.18.json"
+        "report": "https://raw.githubusercontent.com/vicrodh/chilpa-3rd-party-plugins/177bb42dd0e147ee8d0f3659a5888304ee4e7ef2/validation/tidal-0.1.18.json",
+        "platforms": {
+          "macos-aarch64": {
+            "status": "passed",
+            "report": "https://raw.githubusercontent.com/vicrodh/chilpa-3rd-party-plugins/32019d24c382ec17f37337f8462d908b45c02c68/validation/tidal-0.1.18-macos-aarch64.json"
+          }
+        }
+      },
+      "packages": {
+        "linux-x86_64": {
+          "package": "https://github.com/vicrodh/chilpa-pg-tidal/releases/download/v0.1.18/chilpa-pg-tidal-0.1.18-linux-x86_64.zip",
+          "sha256": "eb42be018780a1401a54fe26199d43130233e0df313d5c687925f0ce418b120b"
+        },
+        "macos-aarch64": {
+          "package": "https://github.com/vicrodh/chilpa-pg-tidal/releases/download/v0.1.18/chilpa-pg-tidal-0.1.18-macos-aarch64.zip",
+          "sha256": "1afda8413af0f0f144bc5990f0a004bd945c02527a42ace3dc0435313b101e99"
+        }
       }
     }
   ]
