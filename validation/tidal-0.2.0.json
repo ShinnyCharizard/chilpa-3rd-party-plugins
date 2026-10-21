@@ -1,0 +1,95 @@
+{
+  "version": 1,
+  "plugin_id": "app.chilpa.tidal",
+  "plugin_version": "0.2.0",
+  "author": "vicrodh",
+  "classification": "third_party",
+  "source": {
+    "repository": "https://github.com/vicrodh/chilpa-pg-tidal",
+    "commit": "c3909d8ca2995a384fa8b948073ad1c67d93e1da",
+    "tag": "v0.2.0"
+  },
+  "contract": {
+    "api_version": 1,
+    "process_protocol": 1,
+    "runtime": "process"
+  },
+  "permissions": [
+    {
+      "type": "network",
+      "domains": [
+        "api.tidal.com",
+        "auth.tidal.com",
+        "login.tidal.com",
+        "listen.tidal.com",
+        "tidal.com",
+        "resources.tidal.com",
+        "audio.tidal.com",
+        "sp-pr-fa.audio.tidal.com",
+        "sp-ad-fa.audio.tidal.com",
+        "ab-pr-fa.audio.tidal.com",
+        "ec.tidal.com"
+      ]
+    },
+    {
+      "type": "register_source"
+    },
+    {
+      "type": "register_panel"
+    },
+    {
+      "type": "own_account",
+      "keyring": false
+    }
+  ],
+  "validation": {
+    "project": "Chilpa",
+    "status": "passed",
+    "date": "2026-10-21",
+    "scope": [
+      "manifest and requested permissions",
+      "archive integrity and host limits",
+      "process protocol in the Linux sandbox",
+      "behavior against 0.1.23 with a local fake service",
+      "signed-in account on the owner's Linux host"
+    ]
+  },
+  "package": {
+    "name": "chilpa-pg-tidal-0.2.0-linux-x86_64.zip",
+    "sha256": "f7ade02aa78ad5be78ee0945bce590ca02b6c44410c2769b1366460724ca136f",
+    "compressed_bytes": 3517305,
+    "expanded_bytes": 8793323,
+    "files": 7
+  },
+  "checks": {
+    "unit_and_fixture_tests": {
+      "passed": 33,
+      "failed": 0
+    },
+    "flac_samples_match_reference_decoder": true,
+    "differential_against_0_1_23": {
+      "calls": 114,
+      "ordered_requests": 190,
+      "differences": 0
+    },
+    "packaged_sandbox_protocol": true,
+    "live_account": {
+      "browser_sign_in_in_host_window": true,
+      "code_sign_in": true,
+      "playback_flac_16_44_1": true,
+      "playback_hi_res": true,
+      "seek_and_track_change": true
+    }
+  },
+  "not_tested": [
+    "physical receiver playback (casting)",
+    "AppImage host sign-in window"
+  ],
+  "existing_user_profile_modified": false,
+  "build": {
+    "system": "Debian 12",
+    "glibc_baseline": "2.36",
+    "toolchain": "rust 1.96",
+    "recipe": "tools/package-linux.Dockerfile"
+  }
+}
