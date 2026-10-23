@@ -1,9 +1,11 @@
-# Chilpa 3rd-party plugins
+<img width="100%" alt="Chilpa 3rd Party Plugins: community-made plugins and integrations" src="assets/chilpa-3rdparty-plugins.png" />
 
 > These plugins meet [Chilpa's requirements](#rules-for-listing-a-plugin) to
 > be listed in this catalog, but Chilpa does not endorse them. Their code and
 > how they work are the responsibility of their authors and of the people who
 > use them.
+
+# Chilpa 3rd-party plugins
 
 This catalog, maintained by [vicrodh](https://github.com/vicrodh), lists
 independently published plugins for [Chilpa](https://github.com/vicrodh/chilpa), a native music
