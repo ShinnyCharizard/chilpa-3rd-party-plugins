@@ -1,8 +1,11 @@
 # Chilpa 3rd-party plugins
 
 This catalog, maintained by [vicrodh](https://github.com/vicrodh), lists
-independently published plugins that use Chilpa's native plugin API. It is
-separate from [Chilpa's official catalog](https://github.com/vicrodh/chilpa-plugins).
+independently published plugins for [Chilpa](https://github.com/vicrodh/chilpa), a native music
+player for local libraries and self-hosted servers
+([chilpa.app](https://chilpa.app)). The plugins use Chilpa's native plugin
+API, documented in the [SDK](https://github.com/vicrodh/chilpa-plugins-sdk). It is separate from
+[Chilpa's official catalog](https://github.com/vicrodh/chilpa-plugins).
 Listed plugins are **third-party, with Chilpa verification and validation**.
 Inclusion here does not make them official plugins or imply affiliation with a
 service provider. Validation evidence accompanies each listed release.
@@ -42,15 +45,16 @@ submit a plugin, are in [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Install
 
-Add this URL in **Settings > Plugins** using **Add**:
+Chilpa offers this catalog by default, alongside the official one. Its plugins
+appear in **Settings > Plugins** with a **Third-party** tag, and **Manage**
+lists the catalog under **Third-party plugins**, where it can be refreshed.
+Select **Install**, review the requested permissions and enable the plugin.
+Nothing is installed or enabled on its own, and each download has a SHA-256
+checksum. The catalog's address is:
 
 ```text
 https://raw.githubusercontent.com/vicrodh/chilpa-3rd-party-plugins/main/index.json
 ```
-
-Chilpa reads the catalog alongside the official one. Select **Install**, review
-the requested permissions and enable the plugin. Adding a catalog does not
-automatically install or enable its plugins. Each download has a SHA-256 checksum.
 
 ## Plugins
 
