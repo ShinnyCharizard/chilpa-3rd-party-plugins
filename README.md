@@ -7,6 +7,16 @@ Listed plugins are **third-party, with Chilpa verification and validation**.
 Inclusion here does not make them official plugins or imply affiliation with a
 service provider. Validation evidence accompanies each listed release.
 
+## Disclaimer
+
+Each plugin here is written and maintained by its author. Its code is not part
+of Chilpa, and neither Chilpa nor its author is responsible for it or for how
+it is used. A plugin that relies on reverse engineering does so under its
+author's responsibility, and using it is the responsibility of whoever
+installs it. The validation recorded here shows that a package installs and
+works in Chilpa; it does not review the plugin's code or its standing with any
+service.
+
 ## Install
 
 Add this URL in **Settings > Plugins** using **Add**:
@@ -55,5 +65,6 @@ valid SDK manifests, supported runtimes and permissions, compatible API versions
 and matching package checksums to install and run.
 
 The public [SDK and authoring documentation](https://github.com/vicrodh/chilpa-plugins-sdk)
-defines the plugin contract. Submission rules and a detailed independent-repository
-guide are not yet available.
+defines the plugin contract. The rules for listing a plugin here are in
+[CONTRIBUTING.md](CONTRIBUTING.md). A detailed independent-repository guide is
+not yet available.
