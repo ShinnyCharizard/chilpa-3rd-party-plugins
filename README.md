@@ -1,5 +1,10 @@
 # Chilpa 3rd-party plugins
 
+> These plugins meet [Chilpa's requirements](#rules-for-listing-a-plugin) to
+> be listed in this catalog, but Chilpa does not endorse them. Their code and
+> how they work are the responsibility of their authors and of the people who
+> use them.
+
 This catalog, maintained by [vicrodh](https://github.com/vicrodh), lists
 independently published plugins for [Chilpa](https://github.com/vicrodh/chilpa), a native music
 player for local libraries and self-hosted servers
