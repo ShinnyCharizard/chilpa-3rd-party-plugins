@@ -17,6 +17,29 @@ installs it. The validation recorded here shows that a package installs and
 works in Chilpa; it does not review the plugin's code or its standing with any
 service.
 
+## Rules for listing a plugin
+
+Every plugin in this catalog follows these rules. The full text, and how to
+submit a plugin, are in [CONTRIBUTING.md](CONTRIBUTING.md).
+
+1. Open source, and credit for the work it builds on. A closed-source plugin
+   is possible only after discussing it with Chilpa's author, and with public
+   Terms of Service and a public Privacy Policy.
+2. No piracy: strictly no stream-ripping tools.
+3. Credentials are stored as the SDK's
+   [Credentials](https://github.com/vicrodh/chilpa-plugins-sdk/blob/main/wiki/Credentials.md) page describes, and a plugin
+   never reads, or tries to read, another plugin's credentials.
+4. A person writes or signs the pull request, in plain human text with no
+   emojis, even if the plugin was generated with AI.
+5. A change the plugin needs in Chilpa's core goes to
+   [chilpa](https://github.com/vicrodh/chilpa) as a pull request, justified
+   as reusable by other plugins.
+6. Reverse engineering is the responsibility of the plugin's author, and
+   using the plugin is the responsibility of whoever installs it.
+7. Telemetry only with an opt-in or opt-out switch visible in the plugin's
+   settings, disclosed from installation with Terms of Service, a Privacy
+   Policy, and a README that explains the data flow and disclaims liability.
+
 ## Install
 
 Add this URL in **Settings > Plugins** using **Add**:
@@ -65,6 +88,5 @@ valid SDK manifests, supported runtimes and permissions, compatible API versions
 and matching package checksums to install and run.
 
 The public [SDK and authoring documentation](https://github.com/vicrodh/chilpa-plugins-sdk)
-defines the plugin contract. The rules for listing a plugin here are in
-[CONTRIBUTING.md](CONTRIBUTING.md). A detailed independent-repository guide is
-not yet available.
+defines the plugin contract. A detailed independent-repository guide is not
+yet available.
