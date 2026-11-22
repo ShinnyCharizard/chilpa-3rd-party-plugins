@@ -109,13 +109,13 @@
     {
       "id": "io.github.shinnycharizard.deezer",
       "name": "Deezer",
-      "version": "0.4.9",
+      "version": "0.4.10",
       "description": "Deezer discovery, saved library, search, playlists and authenticated playback. Built on deezsrc by anon7627. Linux x86_64 and macOS Apple Silicon; audio quality depends on your account and subscription.",
       "author": "ShinnyCharizard",
       "category": "Streaming",
       "repository": "https://github.com/ShinnyCharizard/deezer-source",
-      "package": "https://github.com/ShinnyCharizard/deezer-source/releases/download/v0.4.9/deezer-source-0.4.9-linux-x86_64.zip",
-      "sha256": "a564adcd805680a36dfbbc5d808e4ae76bf6894ef9d5a356ec7d865b3c3d5adb",
+      "package": "https://github.com/ShinnyCharizard/deezer-source/releases/download/v0.4.10/deezer-source-0.4.10-linux-x86_64.zip",
+      "sha256": "e7bbc70d8a20bcc4b7e42161ca53187f6ef77e4af451adeca61f589bd3863ff1",
       "api": {
         "min": 1,
         "max": 1
@@ -123,26 +123,26 @@
       "classification": "third_party",
       "packages": {
         "linux-x86_64": {
-          "package": "https://github.com/ShinnyCharizard/deezer-source/releases/download/v0.4.9/deezer-source-0.4.9-linux-x86_64.zip",
-          "sha256": "a564adcd805680a36dfbbc5d808e4ae76bf6894ef9d5a356ec7d865b3c3d5adb"
+          "sha256": "e7bbc70d8a20bcc4b7e42161ca53187f6ef77e4af451adeca61f589bd3863ff1",
+          "package": "https://github.com/ShinnyCharizard/deezer-source/releases/download/v0.4.10/deezer-source-0.4.10-linux-x86_64.zip"
         },
         "macos-aarch64": {
-          "package": "https://github.com/ShinnyCharizard/deezer-source/releases/download/v0.4.9/deezer-source-0.4.9-macos-aarch64.zip",
-          "sha256": "d75bad41e61cf5dbeeb2b068b2a8d4a441768a58095775317d9856dad142a6d0"
+          "sha256": "ed3ab8defc655104de02fe073d70059c3a4fd91147159067fb174b92febec5c5",
+          "package": "https://github.com/ShinnyCharizard/deezer-source/releases/download/v0.4.10/deezer-source-0.4.10-macos-aarch64.zip"
         }
       },
       "validation": {
         "project": "Chilpa",
         "status": "passed",
-        "report": "https://raw.githubusercontent.com/ShinnyCharizard/chilpa-3rd-party-plugins/f89c03321c07565825c6f5508b2397fda08e7a18/validation/deezer-source-0.4.9-linux-x86_64.json",
+        "report": "https://raw.githubusercontent.com/ShinnyCharizard/chilpa-3rd-party-plugins/345a45adcc8c15df6db4bee6108c70fe4023807f/validation/deezer-source-0.4.10-linux-x86_64.json",
         "platforms": {
           "linux-x86_64": {
             "status": "passed",
-            "report": "https://raw.githubusercontent.com/ShinnyCharizard/chilpa-3rd-party-plugins/f89c03321c07565825c6f5508b2397fda08e7a18/validation/deezer-source-0.4.9-linux-x86_64.json"
+            "report": "https://raw.githubusercontent.com/ShinnyCharizard/chilpa-3rd-party-plugins/345a45adcc8c15df6db4bee6108c70fe4023807f/validation/deezer-source-0.4.10-linux-x86_64.json"
           },
           "macos-aarch64": {
             "status": "passed",
-            "report": "https://raw.githubusercontent.com/ShinnyCharizard/chilpa-3rd-party-plugins/f89c03321c07565825c6f5508b2397fda08e7a18/validation/deezer-source-0.4.9-macos-aarch64.json"
+            "report": "https://raw.githubusercontent.com/ShinnyCharizard/chilpa-3rd-party-plugins/345a45adcc8c15df6db4bee6108c70fe4023807f/validation/deezer-source-0.4.10-macos-aarch64.json"
           }
         }
       }
